@@ -1,4 +1,16 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/books';
+
+const dispatch = useDispatch();
+
+const submitBookToStore = () => {
+  const newBook = {
+    id, title, author,
+  }
+
+  dispatch(addBook(newBook));
+}
 
 const categories = ['True Crime', 'Horror', 'Action & Adventure', 'Comic', 'Detective & Mystery', 'Fantasy', 'Historical Fiction', 'Poetry', 'Romance', 'Short Stories', 'Suspense & Thrillers', 'Biographies', 'Cookbooks', 'Essays', 'Memoirs'];
 
@@ -15,7 +27,7 @@ const Form = () => (
             ))
           }
         </select>
-        <button type="button">Add Book</button>
+        <button onClick={submitBookToStore} type="button">Add Book</button>
       </section>
     </form>
   </div>
