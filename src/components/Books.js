@@ -5,7 +5,9 @@ import Form from './Form';
 const Books = () => {
   return (
     <div>
-      <Book />
+      <ul>
+        <Book />
+      </ul>
       <Form />
     </div>
   )
