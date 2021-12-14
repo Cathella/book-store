@@ -1,8 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <div>This is the Navigation</div>
+    <header>
+      <Link to="/">Bookstore CMS</Link>
+      <nav>
+        <Link to="/">Books</Link>
+        <Link to="categories">Categories</Link>
+      </nav>
+    </header>
   )
 }
 
