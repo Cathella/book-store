@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Nav />
         <Routes>
           <Route path="/" element={<BookList />} />

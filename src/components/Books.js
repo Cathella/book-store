@@ -1,6 +1,5 @@
 import React from 'react';
 import Book from './Book';
-import Form from './Form';
 import { v4 as uuidv4 } from 'uuid';
 
 const books = [
@@ -26,7 +25,7 @@ const books = [
 
 const Books = () => {
   return (
-    <div>
+    <div className="container">
       <ul>
         {
           books.map((book) => (
@@ -34,7 +33,6 @@ const Books = () => {
           ))
         }
       </ul>
-      <Form />
     </div>
   )
 }

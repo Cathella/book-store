@@ -1,0 +1,47 @@
+.container {
+  width: 70%;
+  margin: 3em auto;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+nav,
+form {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  margin: 1.5em auto;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 2em 0 0;
+  text-decoration: none;
+}
+
+.book {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.form {
+  border-top: 1px solid #ddd;
+}
+
+form {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section {
+  display: flex;
+  margin: 1em 0 0 0;
+}
