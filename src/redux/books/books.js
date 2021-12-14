@@ -3,21 +3,23 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
 
-export const addBook = payload => ({
+export const addBook = (book) => ({
   type: ADD_BOOK,
-  payload
+  book,
 });
 
-export const removeBook = payload => ({
+export const removeBook = (bookId) => ({
   type: REMOVE_BOOK,
+  bookId,
 });
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return
+      return [...state, action.book];
     case REMOVE_BOOK:
-      return
+      const { bookId } = action;
+      return state.filter((book) => book.id !== bookId);
     default:
       return state;
   }
