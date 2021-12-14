@@ -1,8 +1,13 @@
 import React from 'react';
+import Book from './Book';
+import Form from './Form';
 
 const Books = () => {
   return (
-    <div>This is a list of Books</div>
+    <div>
+      <Book />
+      <Form />
+    </div>
   )
 }
 

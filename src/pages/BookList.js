@@ -1,8 +1,11 @@
 import React from 'react';
+import Books from '../components/Books';
 
 const BookList = () => {
   return (
-    <div>This is the BookList</div>
+    <div>
+      <Books />
+    </div>
   )
 }
 
