@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Book = () => {
+const Book = ({ category, title, author }) => {
   return (
     <li>
-      <p>Action</p>
-      <h3>The Hunger Games</h3>
-      <span>Suzanne Collins</span>
+      <p>{category}</p>
+      <h3>{title}</h3>
+      <span>{author}</span>
       <div>
         <button type="button">Remove</button>
       </div>
