@@ -26,7 +26,7 @@
 
 ## Set up locally
 
-- Open your terminal and run the following command: git clone https://github.com/Cathella/bookstore.git
+- Open your terminal and run the following command: git clone https://github.com/Cathella/book-store.git
 - Run the command "yarn install"
 - Run the command "yarn start"
 
@@ -38,13 +38,13 @@ Once you completed this steps you should see the app running at: http://localhos
 
 - GitHub: [@githubhandle](https://github.com/Cathella)
 - Twitter: [@twitterhandle](https://twitter.com/cathella9)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nakitto-catherine-2020/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nakitto-catherine2020/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Cathella/bookstore/issues)
+Feel free to check the [issues page](https://github.com/Cathella/book-store/issues)
 
 ## Show your support
 
