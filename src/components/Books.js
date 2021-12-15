@@ -9,13 +9,13 @@ const Books = () => {
     <div className="container">
       <ul>
         {
-          books.map((bkObj) => (
+          books.map((book) => (
             <Book
-              key={bkObj.id}
-              id={bkObj.id}
-              category={bkObj.category}
-              title={bkObj.title}
-              author={bkObj.author}
+              key={book.id}
+              id={book.id}
+              category={book.category}
+              title={book.title}
+              author={book.author}
             />
           ))
         }

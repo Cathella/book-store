@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { bindActionCreators } from 'redux';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
@@ -8,8 +7,6 @@ const categories = ['True Crime', 'Horror', 'Action & Adventure', 'Comic', 'Dete
 
 const Form = () => {
   const dispatch = useDispatch();
-  const createBookAction = bindActionCreators(addBook, dispatch);
-
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [author, setAuthor] = useState('');
@@ -19,14 +16,13 @@ const Form = () => {
 
     const id = uuidv4();
 
-    if (title && category && author) {
-      createBookAction({
-        title, author, category, id,
-      });
-      setTitle('');
-      setCategory('');
-      setAuthor('');
-    }
+    const newBook = {
+      id, title, author, category,
+    };
+    dispatch(addBook(newBook));
+    setTitle('');
+    setCategory('');
+    setAuthor('');
   };
 
   return (

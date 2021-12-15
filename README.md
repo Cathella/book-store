@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Book Store
-![screenshot](./Screenshot.png)
+![screenshot](./screenshot.png)
 
 ### Milestone 1:
 - Initialize React app.
