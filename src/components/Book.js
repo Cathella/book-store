@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const Book = ({ id, category, title, author }) => (
+const Book = ({
+  id, category, title, author
+}) => (
   <li className="book">
     <p>{category}</p>
     <h3>{title}</h3>

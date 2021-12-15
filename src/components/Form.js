@@ -44,7 +44,7 @@ const Form = () => {
         </section>
       </form>
     </div>
-  )
+  );
 };
 
 export default Form;

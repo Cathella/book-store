@@ -21,7 +21,7 @@ const Books = () => {
         }
       </ul>
     </div>
-  )
+  );
 };
 
 export default Books;

@@ -12,6 +12,11 @@
 - Add a form for adding a book.
 - Add Categories component displaying "Under construction" text only.
 
+### Milestone 2:
+- Configure Redux store and create a booksReducer with actions.
+- Use redux-logger to check if the application is working correctly on the console logs
+- Implement adding and removing a book in the components.
+
 ## Built With
 
 - HTML, CSS & JS

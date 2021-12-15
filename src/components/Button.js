@@ -14,7 +14,7 @@ const Button = ({ id }) => {
     <div>
       <button type="button" onClick={() => handleBookDelete(id)}>Remove</button>
     </div>
-  )
+  );
 };
 
 Button.propTypes = {
