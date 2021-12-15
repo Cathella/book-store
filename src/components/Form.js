@@ -32,6 +32,7 @@ const Form = () => {
         <section>
           <input id="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} type="text" value={title} />
           <select id="category" onChange={(e) => setCategory(e.target.value)} value={category}>
+            <option>Category</option>
             {
               categories.map((category) => (
                 <option key={category} value={category}>{category}</option>
