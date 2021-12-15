@@ -9,8 +9,14 @@ const Books = () => {
     <div className="container">
       <ul>
         {
-          books.map((book) => (
-            <Book key={book.id} category={book.category} title={book.title} author={book.author} />
+          books.map((bkObj) => (
+            <Book
+              key={bkObj.id}
+              id={bkObj.id}
+              category={bkObj.category}
+              title={bkObj.title}
+              author={bkObj.author}
+            />
           ))
         }
       </ul>
