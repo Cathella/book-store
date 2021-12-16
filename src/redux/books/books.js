@@ -20,7 +20,7 @@ export const getBooks = (payload) => ({
 })
 
 export const addBookToApi = (payload) => async (dispatch) => {
-  const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/:app_id/books';
+  const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/X2VIOoFyC20f0wsfi5oT/books';
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(payload),
@@ -35,7 +35,7 @@ export const addBookToApi = (payload) => async (dispatch) => {
 };
 
 export const removeBookFromApi = (payload) => async (dispatch) => {
-  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/:app_id/books/${payload}`;
+  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/X2VIOoFyC20f0wsfi5oT/books/${payload}`;
   const response = await fetch(url, {
     method: 'DELETE',
   });
@@ -46,7 +46,7 @@ export const removeBookFromApi = (payload) => async (dispatch) => {
 };
 
 export const listBooks = async () => {
-  const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/:app_id/books';
+  const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/X2VIOoFyC20f0wsfi5oT/books';
   const response = await fetch(url);
   const books = await response.json();
   const newBooks = Object.keys(books).map((key) => ({
