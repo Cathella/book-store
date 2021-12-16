@@ -2,7 +2,7 @@ const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
-const url = '';
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/:app_id/books';
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
