@@ -28,12 +28,22 @@ export const addBookToApi = (payload) => async (dispatch) => {
   }
 };
 
+export const removeBookFromApi = (payload) => async (dispatch) => {
+  const response = await fetch(url, {
+    method: 'DELETE',
+  });
+
+  if (response.ok) {
+    dispatch(removeBook(payload));
+  }
+};
+
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
     default:
       return state;
   }
