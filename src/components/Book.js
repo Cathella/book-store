@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const Book = ({
-  item_id, category, title,
+  id, category, title,
 }) => (
   <li className="book">
     <p>{category}</p>
     <h3>{title}</h3>
-    <Button id={item_id} />
+    <Button id={id} />
   </li>
 );
 
 Book.propTypes = {
-  item_id: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
