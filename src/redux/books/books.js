@@ -2,6 +2,7 @@ const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
+const url = '';
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
@@ -12,6 +13,20 @@ export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,
 });
+
+export const addBookToApi = (payload) => async (dispatch) => {
+  const response = await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(payload),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (response.ok) {
+    dispatch(addBook(payload));
+  }
+};
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
