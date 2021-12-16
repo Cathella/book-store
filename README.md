@@ -17,6 +17,11 @@
 - Use redux-logger to check if the application is working correctly on the console logs
 - Implement adding and removing a book in the components.
 
+### Milestone 3:
+- Connect the React-Redux application to an existing API
+- Add books to the API
+- Remove books from the API
+
 ## Built With
 
 - HTML, CSS & JS
