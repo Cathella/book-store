@@ -17,7 +17,7 @@ export const removeBook = (id) => ({
 export const getBooks = (payload) => ({
   type: GET_BOOKS,
   payload,
-})
+});
 
 export const addBookToApi = (payload) => async (dispatch) => {
   const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/X2VIOoFyC20f0wsfi5oT/books';
@@ -56,10 +56,10 @@ export const listBooks = async () => {
   const newBooks = Object.keys(books).map((key) => ({
     ...books[key][0],
     item_id: key,
-  }))
+  }));
 
   return Object.values(newBooks);
-} 
+};
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -68,7 +68,6 @@ const booksReducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      console.log("LOOK HERE!!!", action.payload); 
       return state.filter((book) => book.item_id !== action.payload);
     default:
       return state;

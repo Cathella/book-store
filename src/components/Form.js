@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
@@ -9,7 +10,6 @@ const Form = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
-  // const [author, setAuthor] = useState('');
 
   const submitBookToStore = (e) => {
     e.preventDefault();
@@ -22,7 +22,6 @@ const Form = () => {
     dispatch(addBookToApi(newBook));
     setTitle('');
     setCategory('');
-    // setAuthor('');
   };
 
   return (
@@ -39,7 +38,6 @@ const Form = () => {
               ))
             }
           </select>
-          {/* <input id="author" placeholder="Book Author" onChange={(e) => setAuthor(e.target.value)} type="text" value={author} /> */}
           <button type="submit">Add Book</button>
         </section>
       </form>
