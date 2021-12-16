@@ -9,9 +9,9 @@ export const addBook = (payload) => ({
   payload,
 });
 
-export const removeBook = (payload) => ({
+export const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  payload,
+  payload: id,
 });
 
 export const getBooks = (payload) => ({
@@ -34,14 +34,18 @@ export const addBookToApi = (payload) => async (dispatch) => {
   }
 };
 
-export const removeBookFromApi = (payload) => async (dispatch) => {
-  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/X2VIOoFyC20f0wsfi5oT/books/${payload}`;
+export const removeBookFromApi = (id) => async (dispatch) => {
+  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/X2VIOoFyC20f0wsfi5oT/books/${id}`;
   const response = await fetch(url, {
     method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+    },
   });
 
   if (response.ok) {
-    dispatch(removeBook(payload));
+    dispatch(removeBook(id));
   }
 };
 

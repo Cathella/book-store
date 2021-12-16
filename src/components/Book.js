@@ -8,16 +8,14 @@ const Book = ({
   <li className="book">
     <p>{category}</p>
     <h3>{title}</h3>
-    {/* <span>{author}</span> */}
     <Button id={item_id} />
   </li>
 );
 
 Book.propTypes = {
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
 };
 
 export default Book;

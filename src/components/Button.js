@@ -3,22 +3,22 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookFromApi } from '../redux/books/books';
 
-const Button = ({ id }) => {
+const Button = ({ item_id }) => {
   const dispatch = useDispatch();
 
-  const handleBookDelete = (bookId) => {
-    dispatch(removeBookFromApi(bookId));
+  const handleBookDelete = (id) => {
+    dispatch(removeBookFromApi(id));
   };
 
   return (
     <div>
-      <button type="button" onClick={() => handleBookDelete(id)}>Remove</button>
+      <button type="button" onClick={() => handleBookDelete(item_id)}>Remove</button>
     </div>
   );
 };
 
 Button.propTypes = {
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
 };
 
 export default Button;
