@@ -11,9 +11,7 @@ const Button = ({ id }) => {
   };
 
   return (
-    <div>
-      <button className="remove-action" type="button" onClick={() => handleBookDelete(id)}>Remove</button>
-    </div>
+    <button className="remove-action" type="button" onClick={() => handleBookDelete(id)}>Remove</button>
   );
 };
 
