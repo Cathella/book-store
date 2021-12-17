@@ -1,3 +1,7 @@
+body {
+  background-color: var(--white);
+}
+
 .container {
   width: 70%;
   margin: 3em auto;
@@ -5,31 +9,47 @@
 
 header {
   border-bottom: 1px solid #ddd;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+nav {
+  margin: 0 auto 1.5rem;
+  padding-top: 1.5rem;
 }
 
 nav,
 form {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 70%;
-  margin: 1.5em auto;
-}
-
-.logo {
-  font-size: 1.2em;
-  font-weight: bold;
+  /* margin: 1.5em auto; */
 }
 
 nav a {
   margin: 0 2em 0 0;
+  font-size: 0.813rem;
   text-decoration: none;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  color: var(--black-two);
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: none;
+  text-transform: none;
+  color: var(--azure);
 }
 
 .book {
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin: 1rem 0;
+  padding: 2em;
+  margin: 2rem 0;
   list-style: none;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: #fff;
 }
 
 .form {
