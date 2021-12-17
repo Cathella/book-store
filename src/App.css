@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: 3em auto;
 }
 
@@ -22,8 +22,7 @@ nav,
 form {
   display: flex;
   align-items: center;
-  width: 70%;
-  /* margin: 1.5em auto; */
+  width: 80%;
 }
 
 nav a {
@@ -52,6 +51,7 @@ nav a {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .book-category {
@@ -130,12 +130,38 @@ button.remove-action {
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
-
   margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   background-color: var(--azure);
   border: 1px solid var(--azure);
+}
+
+.percent-complete {
+  margin: 0.063rem 5rem 0 0.688rem;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 2rem;
+  color: var(--black-two);
+}
+
+.completed {
+  margin: 0.438rem 4rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: var(--black-two);
+}
+
+.percentage-sec {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--white-two);
+}
+
+.section-two {
+  display: flex;
 }
 
 .form {
