@@ -25,7 +25,7 @@ const Form = () => {
   };
 
   return (
-    <div className="form">
+    <div className="container">
       <form onSubmit={submitBookToStore}>
         <h3>Add New Book</h3>
         <section>
@@ -38,7 +38,7 @@ const Form = () => {
               ))
             }
           </select>
-          <button type="submit">Add Book</button>
+          <button type="submit" className="add-btn">Add Book</button>
         </section>
       </form>
     </div>
