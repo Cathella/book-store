@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+:root {
+  --azure: #0290ff;
+  --white: #fafafa;
+  --white-two: #e8e8e8;
+  --black-two: #121212;
+  --pinkish-grey: #c4c4c4;
+  --monts: montserrat;
+}
+
 * {
   padding: 0;
   margin: 0;

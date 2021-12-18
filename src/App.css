@@ -1,35 +1,175 @@
-.container {
-  width: 70%;
+body {
+  background-color: var(--white);
+}
+
+.container,
+.form {
+  width: 80%;
   margin: 3em auto;
 }
 
 header {
   border-bottom: 1px solid #ddd;
+  font-family: var(--monts);
+  background-color: #fff;
+}
+
+nav {
+  margin: 0 auto 1.5rem;
+  padding-top: 1.5rem;
+  width: 80%;
 }
 
 nav,
 form {
   display: flex;
-  align-items: flex-end;
-  width: 70%;
-  margin: 1.5em auto;
-}
-
-.logo {
-  font-size: 1.2em;
-  font-weight: bold;
+  align-items: center;
 }
 
 nav a {
   margin: 0 2em 0 0;
+  font-size: 0.813rem;
   text-decoration: none;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  color: var(--black-two);
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--azure);
 }
 
 .book {
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin: 1rem 0;
+  padding: 2em;
+  margin: 2rem 0;
   list-style: none;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-category {
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: var(--monts);
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--black-two);
+}
+
+.book-title {
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.book-author {
+  margin: 0.25rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.actions-container {
+  margin: 1rem 0 0 0;
+  display: flex;
+}
+
+.actions-container button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button.remove-action {
+  border-left: 1px solid var(--white-two);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid var(--white-two);
+  margin: 0 1.5rem;
+}
+
+.current-chapter,
+.chapter-title {
+  color: var(--black-two);
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+}
+
+.current-chapter {
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 0.813rem;
+}
+
+.chapter-title {
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+}
+
+.update-btn,
+.add-btn {
+  font-family: 'Roboto Slab', serif;
+  background-color: var(--azure);
+  border: 1px solid var(--azure);
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.update-btn {
+  font-size: 0.813rem;
+  font-weight: 300;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+}
+
+.percent-complete,
+.completed {
+  font-family: var(--monts);
+  font-weight: normal;
+  color: var(--black-two);
+}
+
+.percent-complete {
+  margin: 0.063rem 5rem 0 0.688rem;
+  font-size: 2rem;
+}
+
+.completed {
+  margin: 0.438rem 4rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.section-two,
+.percentage-sec,
+section {
+  display: flex;
+}
+
+.percentage-sec {
+  align-items: center;
+  border-right: 1px solid var(--white-two);
 }
 
 .form {
@@ -42,6 +182,51 @@ form {
 }
 
 section {
-  display: flex;
-  margin: 1em 0 0 0;
+  margin: 0 0 4rem 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+input,
+select {
+  padding: 0.813rem 1rem;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: #fff;
+  font-family: var(--monts);
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: var(--pinkish-grey);
+}
+
+input {
+  flex-basis: 50%;
+}
+
+select {
+  flex-basis: 34%;
+}
+
+input,
+select,
+.add-btn {
+  margin: 1.188rem 0 0 0;
+}
+
+.add-btn {
+  padding: 0.801rem 2rem;
+  font-size: 0.813rem;
+  font-weight: bold;
+}
+
+.heading-sec {
+  margin: 1.813rem 0 0 0;
+}
+
+.form-label {
+  font-family: var(--monts);
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
 }

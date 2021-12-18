@@ -22,6 +22,9 @@
 - Add books to the API
 - Remove books from the API
 
+### Milestone 4:
+- Style the application according to the design provided in Zeplin
+
 ## Built With
 
 - HTML, CSS & JS

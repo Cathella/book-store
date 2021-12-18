@@ -27,7 +27,9 @@ const Form = () => {
   return (
     <div className="form">
       <form onSubmit={submitBookToStore}>
-        <h3>Add New Book</h3>
+        <div className="heading-sec">
+          <h3 className="form-label">Add New Book</h3>
+        </div>
         <section>
           <input id="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} type="text" value={title} />
           <select id="category" onChange={(e) => setCategory(e.target.value)} value={category}>
@@ -38,7 +40,7 @@ const Form = () => {
               ))
             }
           </select>
-          <button type="submit">Add Book</button>
+          <button type="submit" className="add-btn">Add Book</button>
         </section>
       </form>
     </div>
